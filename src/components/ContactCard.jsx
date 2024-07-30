@@ -61,5 +61,4 @@ const ContactCard = ({ contact }) => {
   );
 };
  
-
 export default ContactCard;
