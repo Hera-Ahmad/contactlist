@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React  from 'react';
 import { HiOutlineUserCircle } from 'react-icons/hi';
 import { IoMdTrash } from 'react-icons/io';
 import { RiEditCircleLine } from 'react-icons/ri';
@@ -11,8 +11,6 @@ import useDisclouse from "../hooks/useDisclouse";
 
 const ContactCard = ({ contact }) => {
     const { isOpen, onClose, onOpen } = useDisclouse();
-
-   
 
 
     const deleteContact = async (id) => {
@@ -38,6 +36,7 @@ const ContactCard = ({ contact }) => {
       className="flex items-center justify-between rounded-lg bg-yellow p-2 text-black"
     >
       <div className="flex items-center gap-2">
+        
         <HiOutlineUserCircle className="text-4xl text-orange" />
         <div>
           <h2 className="font-bold">{contact.name}</h2>
@@ -45,18 +44,22 @@ const ContactCard = ({ contact }) => {
         </div>
       </div>
       <div className="flex items-center gap-2 text-3xl">
-        <RiEditCircleLine className="cursor-pointer" />
+        
+        <RiEditCircleLine  
+        onClick={onOpen}
+        className="cursor-pointer" />
+        
         <IoMdTrash 
          onClick={() => deleteContact(contact.id)}
         className="cursor-pointer text-orange" />
       </div>
     </div>
-    <AddAndUpdateContact isOpen={isOpen} onClose={onClose}  />
-
+    <AddAndUpdateContact 
+    contact={contact} 
+    isUpdate 
+    isOpen={isOpen} 
+    onClose={onClose}  />
    </>
-
-
-
   );
 };
  
