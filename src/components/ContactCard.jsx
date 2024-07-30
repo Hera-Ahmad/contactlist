@@ -12,7 +12,6 @@ import useDisclouse from "../hooks/useDisclouse";
 const ContactCard = ({ contact }) => {
     const { isOpen, onClose, onOpen } = useDisclouse();
 
-
     const deleteContact = async (id) => {
         try 
         { 
