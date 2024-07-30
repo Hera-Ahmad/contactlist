@@ -76,7 +76,6 @@ const AddAndUpdateContact = ({ onClose, isOpen, isUpdate, contact }) => {
 
 
 
-                {/* <p>We're glad to have you here. Use the search bar to find contacts and the plus icon to add new ones. Click on a contact to view more details.</p> */}
             </div>
         </Modal>
     );
