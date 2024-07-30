@@ -78,4 +78,5 @@ const AddAndUpdateContact = ({ onClose, isOpen, isUpdate, contact }) => {
     );
 };
 
+
 export default AddAndUpdateContact;

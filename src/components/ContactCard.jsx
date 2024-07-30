@@ -28,7 +28,6 @@ const ContactCard = ({ contact }) => {
     }
 }
 
-
   return (
     <>
     <div
