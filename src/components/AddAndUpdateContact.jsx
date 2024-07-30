@@ -73,9 +73,6 @@ const AddAndUpdateContact = ({ onClose, isOpen, isUpdate, contact }) => {
                         <button className='border bg-orange px-3 py-1.5 self-end text-zinc-950' >{isUpdate ? "Update " : "Add "}Contact</button>
                     </Form>
                 </Formik>
-
-
-
             </div>
         </Modal>
     );
