@@ -54,7 +54,7 @@ const AddAndUpdateContact = ({ onClose, isOpen, isUpdate, contact }) => {
 
                     onSubmit={(values) => {
                         console.log(values);
-                        isUpdate? updateContact(values):addContact(values);      
+                        isUpdate? updateContact(values,contact.id): addContact(values);      
                     }}
                 >
                     <Form className='flex flex-col gap-4'>
